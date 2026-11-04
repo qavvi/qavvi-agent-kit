@@ -1,0 +1,1 @@
+{"mcpServers":{"qavvi":{"command":"node","args":["/absolute/path/qavvi-agent-kit/bin/qavvi.mjs","mcp"]}}}

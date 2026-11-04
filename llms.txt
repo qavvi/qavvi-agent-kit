@@ -1,0 +1,9 @@
+# Qavvi Agent Kit
+
+> Local agent tools for discovery, inspection, quotes and service calls through Qavvi.
+
+- [Setup](docs/client-setup/README.md)
+- [Tools](docs/mcp-tools-reference.md)
+- [Pricing](docs/access-and-pricing.md)
+- [Security](SECURITY.md)
+- [Architecture](docs/architecture.md)
