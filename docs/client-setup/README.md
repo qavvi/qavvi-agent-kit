@@ -23,6 +23,6 @@ command = "node"
 args = ["/absolute/path/qavvi-agent-kit/bin/qavvi.mjs", "mcp"]
 ```
 
-Restart or reconnect your client and confirm the four tools appear. Ask it to search and quote a service first. Enable human tool approval for service execution.
+Restart or reconnect your client and confirm the six tools appear. Ask it to search and quote a service first. Enable human tool approval for service execution.
 
 `QAVVI_URL` defaults to `https://qavvi.xyz`. HTTPS is required outside localhost. Do not add treasury keys to client configuration. Hosted Streamable HTTP is also available at `https://qavvi.xyz/api/mcp`; its tool set can differ from this local bridge.

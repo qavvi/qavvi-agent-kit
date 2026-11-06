@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/qavvi/qavvi-agent-kit/actions/workflows/ci.yml"><img src="https://github.com/qavvi/qavvi-agent-kit/actions/workflows/ci.yml/badge.svg" alt="Validate agent kit" /></a>
-  <img src="https://img.shields.io/badge/version-0.1.0-d9ff80?style=flat-square&amp;labelColor=243321&amp;color=d9ff80" alt="Version 0.1.0" />
+  <img src="https://img.shields.io/badge/version-0.2.0-d9ff80?style=flat-square&amp;labelColor=243321&amp;color=d9ff80" alt="Version 0.2.0" />
   <img src="https://img.shields.io/badge/Node.js-22%2B-d9ff80?style=flat-square&amp;labelColor=243321" alt="Node.js 22 or newer" />
   <img src="https://img.shields.io/badge/MCP-local_stdio-d9ff80?style=flat-square&amp;labelColor=243321" alt="MCP local stdio" />
 </p>
@@ -74,16 +74,20 @@ node bin/qavvi.mjs quote SERVICE_ID
 
 [Runnable discovery and quote examples](examples/README.md)
 
-## Four tools, one local bridge
+## Six tools, one local bridge
 
 | Tool | What your agent can do |
 | --- | --- |
 | `search_services` | Find services in the Qavvi catalogue |
 | `inspect_service` | Review a service's details before using it |
 | `quote_service` | Request pricing and payment requirements |
+| `prepare_service_call` | Validate input and prepare a short-lived request for review |
+| `execute_service_call` | Execute an approved plan once after rechecking its quote |
 | `call_service` | Run a supported service or receive its payment challenge |
 
-The CLI also supports provider configuration publishing and updates, plus local **ML-DSA-65 manifest signing and verification**. These are separate from the four MCP tools.
+The CLI also supports provider configuration publishing and updates, plus local **ML-DSA-65 manifest signing and verification**. These are separate from the six MCP tools.
+
+Use the [reviewed-call workflow](docs/reviewed-calls.md) to validate and approve requests before execution. It is available through MCP and the JavaScript API.
 
 ## Boundaries you can inspect
 
